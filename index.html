@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ims/upsemfundo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Level UP</title>
+</head>
+
+<body>
+
+
+    <!----------------------------------------CARREGAMENTO--------------------------------------------->
+
+    <body onload="preCarregamento();">
+
+        <div class="pre-carregamento">
+            <div class="efeito-carregamento"> <img src="ims/upsemfundo.png" alt="" width="170px"></div>
+        </div>
+
+        <!------------------------------CABEÇALHO -------------------------------------------->
+        <header>
+            <div class="container">
+                <div class="flex">
+                    <div class="btn-expandir"><i class="bi bi-list" id="btn-exp"></i><a class="logo"
+                            href="index.html"><img src="img/upsemfundo.png" alt="#"></a></div>
+                    <nav>
+                        <ul class="menu-main">
+                            <li><a href="index.html"></a></li>
+                        </ul>
+                    </nav>
+                    <div class="contato">
+                        <img src="ims/7-removebg-preview.png" alt="" class="levela shoppingCartButton">
+
+                        <div class="producstOnCart hide">
+                            <div class="overlay"></div>
+                            <div class="top" id="top-cart">
+                                <button id="closeButton">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <h3>Carrinho de Compras</h3>
+                            </div>
+                            <ul id="buyItems">
+                                <h4 class="empty">O seu carrinho está vazio</h4>
+                                <!-- <li class="buyItem">
+                                <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                                <div>
+                                    <h5>Products Name</h5>
+                                    <h6>$199</h6>
+                                    <div>
+                                        <button>-</button>
+                                        <span class="countOfProduct">1</span>
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </li> -->
+                            </ul>
+                            <button class="btn checkout hidden">Comprar</button>
+                        </div>
+
+
+                        <a href=""><button class="direita  nsei">
+                                <p class="entrar"> Entrar </p>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!----------------------------------CARROSSEL-------------------------------------------->
+
+        <div class="conteiner">
+
+            <div class="imagens">
+                <input type="radio" name="radio" id="imagem1" checked>
+                <input type="radio" name="radio" id="imagem2">
+                <input type="radio" name="radio" id="imagem3">
+                <input type="radio" name="radio" id="imagem4">
+                <input type="radio" name="radio" id="imagem5">
+                <input type="radio" name="radio" id="imagem6">
+
+                <div class="imagem img1">
+                    <img src="img lucas/Jaturat.png" alt="Girassol">
+                </div>
+
+                <div class="imagem img2">
+                    <img src="img lucas/2.png" alt="Girassol">
+                </div>
+
+                <div class="imagem img3">
+                    <img src="img lucas/3.png" alt="Girassol">
+                </div>
+
+                <div class="imagem img4">
+                    <img src="img lucas/5.png" alt="Girassol">
+                </div>
+
+                <div class="imagem img5">
+                    <img src="img lucas/1.png" alt="Girassol">
+                </div>
+
+                <div class="imagem img6">
+                    <img src="img/img6.jpg" alt="Girassol">
+                </div>
+
+            </div>
+            <div class="navegacao">
+                <label for="imagem1" class="bar"></label>
+                <label for="imagem2" class="bar"></label>
+                <label for="imagem3" class="bar"></label>
+                <label for="imagem4" class="bar"></label>
+                <label for="imagem5" class="bar"></label>
+                <label for="imagem6" class="bar"></label>
+            </div>
+
+
+        </div>
+
+        <!-----------------------MENU LATERAL ---------------------------------------------->
+        <nav class="menu-lateral">
+            <!---_______________ BOTAO EXPANDIR_________________-->
+            <ul>
+                <li class="item-menu ativo">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="img/1-removebg-preview.png" alt=""></span>
+                        <span class="text-link">HOME</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="img/2-removebg-preview.png" alt=""></span>
+                        <span class="text-link">ESPORTES</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="img/3-removebg-preview.png" alt=""></span>
+                        <span class="text-link">TEATRO </span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="img/4-removebg-preview.png" alt=""></span>
+                        <span class="text-link"> CINEMA</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="musc.html">
+                        <span class="icon"><img class="im" src="img/6-removebg-preview.png" alt=""></span>
+                        <span class="text-link"> MÚSICA</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="img/7-removebg-preview.png" alt=""></span>
+                        <span class="text-link">CARRINHO</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="img/8-removebg-preview.png" alt=""></span>
+                        <span class="text-link"> LOGIN</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="img/9-removebg-preview.png" alt=""></span>
+                        <span class="text-link">SOBRE</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <!------------------------------------------CARDS--------------------------------->
+
+        <div class="conteudos">
+            <div class="item-conteudos">
+                <div class="img-conteudos">
+                    <img src="ims/tura.png" alt="Event image" class="cardizin">
+                </div>
+
+                <div class="body-conteudos">
+                    <div class="overlay"></div>
+
+                    <div class="event-info">
+                        <p class="title"> FORMANDOS 2023</p>
+                        <div class="separator"></div>
+                        <p class="info">Porto Alegre, RS</p>
+                        <p class="price">Free</p>
+
+                        <div class="additional-info">
+                            <p class="info">
+                                <i class="fas fa-map-marker-alt" style="color: black;"></i>
+                                Campus FAPA
+                            </p>
+                            <p class="info">
+                                <i class="far fa-calendar-alt"></i>
+                                Sex, Jul 07, 14:00 Tar
+                            </p>
+
+                            <p class="info description">
+                                É com muita alegria e gratidão que convidamos vocês para celebrar conosco a nossa
+                                formatura! Após anos de dedicação, esforço e aprendizado, chegou o momento de
+                                <span> <a href="formatura.html">mais...</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <button class="action"> <a href="formatura.html" class="cor">Reserve</a></button>
+                </div>
+            </div>
+
+            <div class="item-conteudos">
+                <div class="img-conteudos">
+                    <img src="img lucas/6.png" alt="Event image">
+                </div>
+
+                <div class="body-conteudos">
+                    <div class="overlay"></div>
+
+                    <div class="event-info">
+                        <p class="title">INTER X PALMEIRAS</p>
+                        <div class="separator"></div>
+                        <p class="info">Porto Alegre, RS</p>
+                        <p class="price">40 real</p>
+
+                        <div class="additional-info">
+                            <p class="info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                BEIRA RIO
+                            </p>
+                            <p class="info">
+                                <i class="far fa-calendar-alt"></i>
+                                Jul 16 de 2023
+                            </p>
+
+                            <p class="info description">Ao longo da história, Internacional e Palmeiras já se
+                                enfrentaram 87 vezes. A vantagem, no retrospecto geral, é do Colorado, que tem 36
+                                vitórias contra 27 do Verdão, além de 24 empates.<span>
+                                    <a href="jogo01.html">mais...</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <button class="action"> <a href="jogo01.html" class="cor">Reserve</a></button>
+                </div>
+            </div>
+
+            <div class="item-conteudos">
+                <div class="img-conteudos">
+                    <img src="ims/juras.png" alt="Event image">
+                </div>
+
+                <div class="body-conteudos">
+                    <div class="overlay"></div>
+
+                    <div class="event-info">
+                        <p class="title">Mundo Jurassico</p>
+                        <div class="separator"></div>
+                        <p class="info">Porto Alegre, RS</p>
+                        <p class="price">A partir de R$ 25,00</p>
+
+                        <div class="additional-info">
+                            <p class="info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Teatro Bourbon Country
+                            </p>
+                            <p class="info">
+                                <i class="far fa-calendar-alt"></i>
+                                29 Julho de 2023
+                            </p>
+
+                            <p class="info description">
+                                Em julho, o Circo Internacional da China traz ao Brasil o espetáculo Mundo Jurássico,
+                                uma superprodução inédita para toda a família. <span> <a
+                                        href="formatura.html">mais...</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <button class="action"> <a href="" class="cor">Reserve</a></button>
+                </div>
+            </div>
+
+            <div class="contenidos">
+                <div class="item-conteudos">
+                    <div class="img-conteudos">
+                        <img src="img lucas/8.png" alt="Event image">
+                    </div>
+
+                    <div class="body-conteudos">
+                        <div class="overlay"></div>
+
+                        <div class="event-info">
+                            <p class="title">GRÊMIO X GALO</p>
+                            <div class="separator"></div>
+                            <p class="info">Porto Alegre, RS</p>
+                            <p class="price"> apartir de 50 mil</p>
+
+                            <div class="additional-info">
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Arena do Grêmio
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Jul 22 de 2023
+                                </p>
+
+                                <p class="info description">
+                                    Com 29 vitórias do Grêmio e 20 empates, Atlético Mineiro 23 vitórias. Maior goleada
+                                    do confronto: Grêmio 5 x 0 Atlético-MG - Brasileirão de 1996. Quem marcou mais gols:
+                                    Grêmio 92 x 72 do Atlético-MG.<span> <a href="jogo06.html">mais...</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="action"> <a href="jogo06.html" class="cor">Reserve</a></button>
+                    </div>
+                </div>
+
+                <div class="item-conteudos">
+                    <div class="img-conteudos">
+                        <img src="ims/WhatsApp Image 2023-06-26 at 22.17.22.jpeg" alt="Event image">
+                    </div>
+
+                    <div class="body-conteudos">
+                        <div class="overlay"></div>
+
+                        <div class="event-info">
+                            <p class="title">Oppenheimer</p>
+                            <div class="separator"></div>
+                            <p class="info">Porto Alegre, RS</p>
+                            <p class="price">1 real</p>
+
+                            <div class="additional-info">
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Nos cinemas
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Jul 07 de 2023
+                                </p>
+
+                                <p class="info description">
+                                    O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o
+                                    Projeto Manhattan, levando ao desenvolvimento da bomba atômica.<span> <a
+                                            href="formatura.html">mais...</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="action"> <a href="" class="cor">Reserve</a></button>
+                    </div>
+                </div>
+
+                <div class="item-conteudos">
+                    <div class="img-conteudos">
+                        <img src="img lucas/7.png" alt="Event image">
+                    </div>
+
+                    <div class="body-conteudos">
+                        <div class="overlay"></div>
+
+                        <div class="event-info">
+                            <p class="title">Brasil x França Volei</p>
+                            <div class="separator"></div>
+                            <p class="info">Porto Alegre, RS</p>
+                            <p class="price">20 pilas</p>
+
+                            <div class="additional-info">
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Gigantinho
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Dez 03 de 2023
+                                </p>
+
+                                <p class="info description">
+                                    Na história da VNL Masculina, Brasil e França já se enfrentaram em seis
+                                    oportunidades, com quatro vitórias francesas e apenas duas dos brasileiros.
+
+                                    <span> <a href="formatura.html">mais...</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="action"> <a href="" class="cor">Reserve</a></button>
+                    </div>
+                </div>
+
+
+                <div class="contenidos">
+                    <div class="item-conteudos">
+                        <div class="img-conteudos">
+                            <img src="ims/bar.jpg" alt="Event image">
+                        </div>
+
+                        <div class="body-conteudos">
+                            <div class="overlay"></div>
+
+                            <div class="event-info">
+                                <p class="title">Barbie</p>
+                                <div class="separator"></div>
+                                <p class="info">Porto Alegre, RS</p>
+                                <p class="price">25 R$</p>
+
+                                <div class="additional-info">
+                                    <p class="info">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Nos cinemas
+                                    </p>
+                                    <p class="info">
+                                        <i class="far fa-calendar-alt"></i>
+                                        Jul 20 de 2023
+                                    </p>
+
+                                    <p class="info description">
+                                        Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que
+                                        perfeita, Barbie parte para o mundo humano em busca da verdadeira
+                                        felicidade.<span> <a href="formatura.html">mais...</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="action"> <a href="" class="cor">Reserve</a></button>
+                        </div>
+                    </div>
+
+                    <div class="item-conteudos">
+                        <div class="img-conteudos">
+                            <img src="ims/vintage.jpg" alt="Event image" class="cardizin">
+                        </div>
+
+                        <div class="body-conteudos">
+                            <div class="overlay"></div>
+
+                            <div class="event-info">
+                                <p class="title"> Vintage Culture</p>
+                                <div class="separator"></div>
+                                <p class="info"> Porto Alegre, RS</p>
+                                <p class="price"> A partir de 130R$</p>
+
+                                <div class="additional-info">
+                                    <p class="info">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Grande Porto Alegre
+                                    </p>
+                                    <p class="info">
+                                        <i class="far fa-calendar-alt"></i>
+                                        Sab, Set 30, 17:00 Tar
+                                    </p>
+
+                                    <p class="info description">
+                                        Você está pronto para uma noite inesquecível de música eletrônica? O Vintage
+                                        Culture está chegando à cidade e você não pode perder essa oportunidade! <span>
+                                            <a href="vintage.html">mais...</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="action"> <a href="vintage.html" class="cor">Reserve</a></button>
+                        </div>
+                    </div>
+
+                    <div class="item-conteudos">
+                        <div class="img-conteudos">
+                            <img src="img lucas/barbixa.png" alt="Event image">
+                        </div>
+
+                        <div class="body-conteudos">
+                            <div class="overlay"></div>
+
+                            <div class="event-info">
+                                <p class="title">Os Barbixas </p>
+                                <div class="separator"></div>
+                                <p class="info"> Porto Alegre, RS</p>
+                                <p class="price">a partir de R$ 45,00</p>
+
+                                <div class="additional-info">
+                                    <p class="info">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Teatro Bourbon Country
+                                    </p>
+                                    <p class="info">
+                                        <i class="far fa-calendar-alt"></i>
+                                        7 Out
+                                    </p>
+
+                                    <p class="info description">
+                                        Barbixas de Humor é um grupo humorístico formado por Daniel Nascimento, Anderson
+                                        Bizzocchi e Elidio Sanna e tem influência, entre outros, da série Whose Line Is
+                                        It Anyway?<span> <a href="formatura.html">mais...</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="action"> <a href="" class="cor">Reserve</a></button>
+                        </div>
+                    </div>
+
+
+
+
+                    <!---------------------------------------MENU RESPONSIVO---------------------------------------------->
+                    <div class="menuzinho">
+                        <div class="esporte">
+                            <a href="#"><img src="ims/2.png" alt="" class="emagem">
+                            </a>
+                        </div>
+
+                        <div class="teatro">
+                            <a href="#"><img src="ims/3.png" alt="" class="emagem">
+                            </a>
+                        </div>
+                        <div class="nsei">
+                            <a href="index.html">
+                                <img src="ims/1.png" alt="" class="emagem">
+                            </a>
+                        </div>
+
+                        <div class="cinema">
+                             <a href="#">
+                                     <img src="img/4-removebg-preview.png" alt="" class="emagem">
+                                    </a>
+
+                        </div>
+                        <div class="musica"><a href="musc.html">
+                                <img src="ims/6.png" alt="" class="emagem"></a>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!---------------------------------------MENU RESPONSIVO---------------------------------------------->
+                  
+
+
+
+                    <!----------------------------------categorias------------------------------- -->
+                    <div id="caixa">
+
+
+                        <div class="imagi">
+                            <img src="ims/esport.jpg" alt="" class="img-caixa">
+                            <div class="content">
+                                <h1>Esporte</h1>
+                            </div>
+                        </div>
+
+
+                        <div class="imagi">
+                            <img src="ims/cine.jpg" alt="" class="img-caixa">
+                            <div class="content">
+                                <h1> Cinema </h1>
+                            </div>
+                        </div>
+
+                        <div class="imagi">
+                            <img src="ims/danc.jpg" alt="" class="img-caixa">
+                            <div class="content">
+                                <h1>Música</h1>
+                            </div>
+                        </div>
+
+                        <div class="imagi">
+                            <img src="ims/teatro.jpeg" alt="" class="img-caixa">
+                            <div class="content">
+                                <h1>Teatro</h1>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!---------------------------------BOTAO DE TOOPO-------------------------------------->
+
+                    <button class="go-top-btn">
+                        <img src="ims/upsemfundo.png" alt="arrow up">
+                    </button>
+
+
+
+
+
+                    <!-----------------------------------------FOOTER------------------------------------------>
+                    <footer>
+                        <div class="links">
+
+                            <ol class="listol">
+                                <h2> INSTITUCIONAL </h2>
+                                <li><a href="#">Termos e condições</a></li>
+                                <li><a href="#">Sobre o site</a></li>
+                                <li><a href="#">Mapa do site</a></li>
+                                <li><a href="#">Sobre</a></li>
+                            </ol>
+
+                            <ol class="listol">
+                                <h2>FORMAS DE PAGAMENTOS</h2>
+                                <li><a href="#"><img src="ims/pix.png" alt="" width="45px"
+                                            style="border-radius:12px;"></a>
+                                </li>
+
+
+                            </ol>
+                            <div class="redes">
+                                <a
+                                    href="https://www.instagram.com/eventsuplevel/?igshid=NTc4MTIwNjQ2YQ%3D%3D&__coig_restricted=1"><img
+                                        src="ims/insta2.png" id="redes" alt=""></a>
+                                <a href="mailto:oeventespa@gmail.com"><img src="ims/email.png" id="redes" alt=""></a>
+
+                            </div>
+                        </div>
+                        <div class="copy">
+                            <h1 class="logo"> level up</h1>
+                            <p> Todos os direitos reservados para a página level up 2023&reg;&copy;</p>
+                        </div>
+                    </footer>
+
+
+                    <script src="menu.js"></script>
+                    <script src="cart.js"></script>
+    </body>
+
+</html>
